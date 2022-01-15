@@ -1,3 +1,4 @@
+import "./home.css";
 import { DisplayAlbum } from "./DisplayAlbum/DisplayAlbum"
 
 export const Home = () => {
@@ -6,9 +7,24 @@ export const Home = () => {
             
             
             <h1> Home </h1>
-            <div>
+            <div  className="container-div-for-display-album">
 
                 <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum /><DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum /><DisplayAlbum />
             </div>
 
         </div>
