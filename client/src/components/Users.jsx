@@ -1,9 +1,9 @@
-export const UserDetails = () => {
+export const Users = () => {
     return (
         <div>
             
             
-            <h1> UserDetails </h1>
+            <h1> Users </h1>
         </div>
     )
 }
