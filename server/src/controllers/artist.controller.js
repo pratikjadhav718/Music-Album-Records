@@ -8,7 +8,7 @@ router.post("", async(req, res)=>{
     const newArtist = await Artist.find({name:req.body.name});
 
     if(newArtist.length != 0){
-        return res.status(201).send(true);
+        return res.status(201).send("This name already exists");
     }
 
     const artist = await Artist.create(req.body);
