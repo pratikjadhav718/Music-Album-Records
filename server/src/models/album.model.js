@@ -8,7 +8,7 @@ const albumSchema = new mongoose.Schema({
         {type:mongoose.Schema.Types.ObjectId, ref:"song", required:false}
     ],
     genres:[
-        {type:mongoose.Schema.Types.ObjectId, ref:"genres", required:false}
+        {type:String, required:false}
     ],
     poster:{type:String, required:true}
 })
