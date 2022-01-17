@@ -10,10 +10,12 @@ app.use(express.json());
 const artistController = require("./controllers/artist.controller");
 const genresController = require("./controllers/genres.controller");
 const songController = require("./controllers/song.controller");
+const albumController = require("./controllers/album.controller");
 
 app.use("/artist", artistController);
 app.use("/genres", genresController);
 app.use("/song", songController);
+app.use("/album", albumController);
 
 app.get("/", (req, res)=>{
     console.log("getting get request at /");
