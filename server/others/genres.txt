@@ -1,0 +1,114 @@
+{
+    "genres_name": "Rock",
+    "_id": "61e551d4ba8ea1147f874dc7",
+    "__v": 0
+}
+
+{
+    "genres_name": "Soft Rock",
+    "_id": "61e58c6895fa7799b1c9aba3",
+    "__v": 0
+}
+
+{
+    "genres_name": "Pop Music",
+    "_id": "61e551feba8ea1147f874dca",
+    "__v": 0
+}
+
+{
+    "genres_name": "Popular Music",
+    "_id": "61e55251ba8ea1147f874dcd",
+    "__v": 0
+}
+
+{
+    "genres_name": "Jazz",
+    "_id": "61e5526cba8ea1147f874dd0",
+    "__v": 0
+}
+
+{
+    "genres_name": "R&B",
+    "_id": "61e552efba8ea1147f874dd3",
+    "__v": 0
+}
+
+{
+    "genres_name": "Post-Disco",
+    "_id": "61e566ff95fa7799b1c9ab8c",
+    "__v": 0
+}
+
+{
+    "genres_name": "Funk",
+    "_id": "61e5672e95fa7799b1c9ab8f",
+    "__v": 0
+}
+
+
+{
+    "genres_name": "Grunge",
+    "_id": "61e595a695fa7799b1c9abb2",
+    "__v": 0
+}
+
+{
+    "genres_name": "Alternative rock",
+    "_id": "61e595c295fa7799b1c9abb5",
+    "__v": 0
+}
+
+{
+    "genres_name": "Hip Hop",
+    "_id": "61e597c195fa7799b1c9abca",
+    "__v": 0
+}
+
+{
+    "genres_name": "Alternative Pop",
+    "_id": "61e59a9295fa7799b1c9abe4",
+    "__v": 0
+}
+
+{
+    "genres_name": "Bedroom Pop",
+    "_id": "61e59ab795fa7799b1c9abe7",
+    "__v": 0
+}
+
+{
+    "genres_name": "Pop-Punk",
+    "_id": "61e59ad795fa7799b1c9abea",
+    "__v": 0
+}
+
+{
+    "genres_name": "Pop-funk",
+    "_id": "61e59d2695fa7799b1c9abf6",
+    "__v": 0
+}
+
+{
+    "genres_name": "Dance Pop",
+    "_id": "61e59d4a95fa7799b1c9abf9",
+    "__v": 0
+}
+
+{
+    "genres_name": "electrpop",
+    "_id": "61e59d7095fa7799b1c9abfc",
+    "__v": 0
+}
+
+{
+    "genres_name": "nu-disco",
+    "_id": "61e59d8895fa7799b1c9abff",
+    "__v": 0
+}
+
+{
+    "genres_name": "synth-pop",
+    "_id": "61e59d9d95fa7799b1c9ac02",
+    "__v": 0
+}
