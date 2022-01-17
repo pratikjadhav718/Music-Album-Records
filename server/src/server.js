@@ -8,8 +8,10 @@ app.use(cors());
 app.use(express.json());
 
 const artistController = require("./controllers/artist.controller");
+const genresController = require("./controllers/genres.controller");
 
 app.use("/artist", artistController);
+app.use("/genres", genresController);
 
 app.get("/", (req, res)=>{
     console.log("getting get request at /");
