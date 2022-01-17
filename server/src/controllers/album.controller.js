@@ -1,4 +1,5 @@
 const express = require("express");
+const { searchHandler } = require("../middlewares/middleware1");
 
 const router = express.Router();
 
@@ -16,7 +17,7 @@ router.post("", async(req, res) => {
     return res.status(200).send(newalbum);
 })
 
-router.get("", async(req, res) => {
+router.get("", searchHandler, async(req, res) => {
     const page = +req.query.page || 1;
     const size = +req.query.size || 4;
 
@@ -25,6 +26,7 @@ router.get("", async(req, res) => {
     const album = await Album.find().skip(offset).limit(size).lean().exec();
 
     const totalAlbumCount = await Album.find().countDocuments();
+    // console.log('totalAlbumCount:', totalAlbumCount)
 
     const totalPages = Math.ceil(totalAlbumCount/ size);
 
