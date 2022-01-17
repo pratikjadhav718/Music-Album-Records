@@ -16,4 +16,19 @@ router.post("", async(req, res) => {
     return res.status(200).send(newalbum);
 })
 
+router.get("", async(req, res) => {
+    const page = +req.query.page || 1;
+    const size = +req.query.size || 4;
+
+    const offset = (page -1 ) * size;
+
+    const album = await Album.find().skip(offset).limit(size).lean().exec();
+
+    const totalAlbumCount = await Album.find().countDocuments();
+
+    const totalPages = Math.ceil(totalAlbumCount/ size);
+
+    return res.send({album, totalPages});
+})
+
 module.exports = router;
