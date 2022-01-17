@@ -1,10 +1,12 @@
 const express = require("express");
 const { searchHandler } = require("../middlewares/middleware1");
 const { searchAlbum } = require("../middlewares/middleware2");
+const { searchAlbumByGenres } = require("../middlewares/middleware3");
 
 const router = express.Router();
 
 const Album = require("../models/album.model");
+const crudController = require("./crud.controller");
 
 router.post("", async(req, res) => {
     const album = await Album.find({album_name:req.body.album_name});
@@ -18,7 +20,7 @@ router.post("", async(req, res) => {
     return res.status(200).send(newalbum);
 })
 
-router.get("", searchAlbum, searchHandler, async(req, res) => {
+router.get("", searchAlbum, searchAlbumByGenres, searchHandler, async(req, res) => {
     const page = +req.query.page || 1;
     const size = +req.query.size || 4;
 
@@ -34,4 +36,12 @@ router.get("", searchAlbum, searchHandler, async(req, res) => {
     return res.send({album, totalPages});
 })
 
+router.get("/:id", async(req, res)=>{
+    const item = await Album.findById(req.params.id).populate("song_list");
+
+    return res.status(200).send({item});
+})
+
+// router.get("/:id", crudController.getbyid(Album));
+router.patch("/:id", crudController.patch(Album));
 module.exports = router;
