@@ -7,7 +7,7 @@ export const Navbar = () => {
             gap:"30px",
             width:"500px",
             margin:"auto",
-            marginTop:"50px"
+            marginTop:"10px"
             
         }}>
             <Link to="/">Home</Link>

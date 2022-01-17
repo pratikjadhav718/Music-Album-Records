@@ -1,7 +1,11 @@
 import "./home.css";
 import { DisplayAlbum } from "./DisplayAlbum/DisplayAlbum"
+import { Footer } from "./footer";
+import { useState } from "react";
 
 export const Home = () => {
+    const [pageNo, setpageNo] = useState(1);
+
     return (
         <div>
             
@@ -21,12 +25,13 @@ export const Home = () => {
                 <DisplayAlbum />
                 <DisplayAlbum />
                 <DisplayAlbum />
-                <DisplayAlbum /><DisplayAlbum />
                 <DisplayAlbum />
                 <DisplayAlbum />
-                <DisplayAlbum /><DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
+                <DisplayAlbum />
             </div>
-
+            <Footer pageNo={pageNo}/>
         </div>
     )
 }
