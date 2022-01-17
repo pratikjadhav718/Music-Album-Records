@@ -5,12 +5,12 @@ module.exports = {
 
         let searchalbum = req.query.searchalbum;
 
-        if(searchalbum.length == 0){
+        if(searchalbum == undefined){
             next();
             return;
         }
 
-        let keyword = req.query.searchalbum;
+        let keyword = (req.query.searchalbum).toLowerCase();
         let album = await Album.find().lean().exec();
         let albumTitleArr = [];
         for(let i =0; i<album.length; i++){
@@ -22,7 +22,7 @@ module.exports = {
                 newArr.push(albumTitleArr[i]);
             }
         }
-        console.log(newArr);
+        console.log("newArr",newArr);
         
 
         // let album = await Album.find().lean().exec();
