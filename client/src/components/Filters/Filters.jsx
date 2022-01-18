@@ -1,11 +1,17 @@
+
 import "./filter.css";
 
-export const Filters = () => {
+export const Filters = ({funGenre}) => {
+    
+
+    const handleselctChange = (e) =>{
+        funGenre(e.target.value);
+    }
     return(
         <>
             <div className="main-div-for-filters">
-                <select name="Genre" id="genre" className="genres-selector"  >
-                    <option value="Pop Music">Pop Music</option>
+                <select name="Genre" id="genre" className="genres-selector" onChange={handleselctChange}>
+                    <option value="Pop Music" >Pop Music</option>
                     <option value="Post-Disco">Post-Disco</option>
                     <option value="Rock">Rock</option>
                     <option value="Funk">Funk</option>

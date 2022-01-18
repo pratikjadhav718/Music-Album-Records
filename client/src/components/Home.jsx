@@ -10,13 +10,29 @@ export const Home = () => {
     const [pageNo, setpageNo] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const [searchKey, setSearchKey] = useState("");
-    
+    const [genreValue, setGenreValue] = useState("");
+
+    const funGenre = (newGen)=>{
+        // console.log(newGen, "adbdfd");
+        setGenreValue(newGen);
+    }
+
     const funSetSearchKey = (newkey)=>{
         // console.log('newkey:', newkey)
         setSearchKey(newkey);
     }
     useEffect(() => {
         // console.log("IN use effect");
+        if(genreValue.length > 0){
+            fetch(`http://localhost:2345/album?genre=${genreValue}`)
+            .then((d) => d.json())
+            .then((res) =>{
+                // console.log("res", res.album);
+                setShowData(res.album)
+                setTotalPages(res.totalPages);
+            })
+        }
+
         if(searchKey == ""){
 
             fetch(`http://localhost:2345/album?page=${pageNo}`)
@@ -35,7 +51,7 @@ export const Home = () => {
                 setTotalPages(res.totalPages);
             })
         }
-    }, [pageNo, searchKey])
+    }, [pageNo, searchKey, genreValue])
     
 
     const  handlePageChange = function(check){
@@ -65,7 +81,7 @@ export const Home = () => {
         <div>
             <SearchBar funSetSearchKey={funSetSearchKey}/>
 
-            <Filters />
+            <Filters funGenre={funGenre}/>
             
             {/* <h1> Home </h1> */}
             <div  className="container-div-for-display-album">
