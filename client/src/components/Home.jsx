@@ -31,9 +31,7 @@ export const Home = () => {
                 setShowData(res.album)
                 setTotalPages(res.totalPages);
             })
-        }
-
-        if(searchKey == ""){
+        }else if(searchKey == ""){
 
             fetch(`http://localhost:2345/album?page=${pageNo}`)
             .then((d) => d.json())

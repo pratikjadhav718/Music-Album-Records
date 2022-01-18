@@ -1,7 +1,8 @@
 .main-div-for-filters {
-    border: 1px solid springgreen;
+    /* border: 1px solid springgreen; */
     width: 80%;
     margin: auto;
+    margin-top: 10px;
     height: 25px;
     display: flex;
     
@@ -9,4 +10,13 @@
 
 .genres-selector {
     height: 25px;
+    margin-left: 75%;
+}
+
+.year-selectore {
+    margin-left: 25px;
+}
+
+.main-div-for-filters > select {
+    border: none;
 }
