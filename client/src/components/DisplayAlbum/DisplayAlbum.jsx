@@ -5,14 +5,16 @@ export const DisplayAlbum = ({showData}) => {
     // console.log('showData:', showData)
 
     const handleAlbumClick = (e)=>{
-        console.log("clicked albdsjf", e.target.value);
-        <Redirect to="/" />
+        console.log("clicked albdsjf", e._id);
+        // <Redirect to={`/album/${e._id}`} />
+        window.location = `/album/${e._id}`;
     }
     return (
         <>
             {
                 showData.map((e) =>(
-                    <div className="display-album-main-div" key={e._id} onClick={handleAlbumClick}>
+                    
+                    <div className="display-album-main-div" key={e._id} onClick={()=>{handleAlbumClick(e)}}>
                         <h2>{e.album_name}</h2>
                         <img src={e.poster} alt="" />
                         <h3>{e.artist.name}</h3>

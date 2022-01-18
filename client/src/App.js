@@ -21,6 +21,7 @@ import { ContactUs } from './components/ContactUs';
 import { Login } from './components/Login';
 import { PrivateRoute } from './components/PrivateRoute';
 import {Users} from './components/Users';
+import { ShowAlbumDetails } from './components/ShowAlbumDetails/ShowAlbumDetails';
 
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
 
     <Route path="/about">
       <About/>
+    </Route>
+
+    <Route path="/album/:id">
+      <ShowAlbumDetails />
     </Route>
 
     <Route path="/contact">

@@ -2,6 +2,7 @@ const express = require("express");
 const { searchHandler } = require("../middlewares/middleware1");
 const { searchAlbum } = require("../middlewares/middleware2");
 const { searchAlbumByGenres } = require("../middlewares/middleware3");
+const { searchAlbumBySort } = require("../middlewares/middleware4");
 
 const router = express.Router();
 
@@ -20,7 +21,7 @@ router.post("", async(req, res) => {
     return res.status(200).send(newalbum);
 })
 
-router.get("", searchAlbum, searchAlbumByGenres, searchHandler, async(req, res) => {
+router.get("", searchAlbum, searchAlbumByGenres, searchAlbumBySort, searchHandler, async(req, res) => {
     const page = +req.query.page || 1;
     const size = +req.query.size || 4;
 

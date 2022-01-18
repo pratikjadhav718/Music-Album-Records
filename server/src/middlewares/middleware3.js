@@ -13,7 +13,7 @@ module.exports = {
         
         let album = await Album.find({genres:req.query.genre}).lean().exec();
 
-        console.log(album.length);
+        // console.log(album.length);
 
         return res.send({album});
 
