@@ -26,7 +26,7 @@ router.get("", searchAlbum, searchAlbumByGenres, searchHandler, async(req, res) 
 
     const offset = (page -1 ) * size;
 
-    const album = await Album.find().skip(offset).limit(size).lean().exec();
+    const album = await Album.find().populate("artist").skip(offset).limit(size).lean().exec();
 
     const totalAlbumCount = await Album.find().countDocuments();
     // console.log('totalAlbumCount:', totalAlbumCount)

@@ -7,11 +7,15 @@ export const DisplayAlbum = ({showData}) => {
         <>
             {
                 showData.map((e) =>(
-                    <div className="display-album-main-div" key={e.ids}>
+                    <div className="display-album-main-div" key={e._id}>
                         <h2>{e.album_name}</h2>
-                        <img src={coverpic} alt="" />
-                        <h3>{e.artist_name}</h3>
-                        <p> <span>{e.song_count}</span> songs</p>
+                        <img src={e.poster} alt="" />
+                        <h3>{e.artist.name}</h3>
+                        <p><span>{e.genres[0]}</span> ,<span>{e.genres[1]}</span> 
+                        <span>{e.genres[2]}</span> ,<span>{e.genres[3]}</span>
+                        </p>
+                        
+                        <p> <span>{e.song_list.length}</span> songs</p>
                     </div>
                 ))
             }

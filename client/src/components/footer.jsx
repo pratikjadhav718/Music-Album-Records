@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Footer = () => {
+export const Footer = ({pageNo}) => {
     return (
         <div style={{
             display:"flex",
@@ -11,7 +11,7 @@ export const Footer = () => {
             
         }}>
             <Link to="/">prev</Link>
-            <Link to="/">1</Link>
+            <Link to="/">{pageNo}</Link>
             <Link to="/">next</Link>
         </div>
     );
