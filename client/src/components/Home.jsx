@@ -8,17 +8,33 @@ export const Home = () => {
 
     const [pageNo, setpageNo] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
-
+    const [searchKey, setSearchKey] = useState("");
+    
+    const funSetSearchKey = (newkey)=>{
+        // console.log('newkey:', newkey)
+        setSearchKey(newkey);
+    }
     useEffect(() => {
         // console.log("IN use effect");
-        fetch(`http://localhost:2345/album?page=${pageNo}`)
-        .then((d) => d.json())
-        .then((res) =>{
-            // console.log("res", res.album);
-            setShowData(res.album)
-            setTotalPages(res.totalPages);
-        })
-    }, [pageNo])
+        if(searchKey == ""){
+
+            fetch(`http://localhost:2345/album?page=${pageNo}`)
+            .then((d) => d.json())
+            .then((res) =>{
+                // console.log("res", res.album);
+                setShowData(res.album)
+                setTotalPages(res.totalPages);
+            })
+        }else{
+            fetch(`http://localhost:2345/album?page=${pageNo}&searchalbum=${searchKey}`)
+            .then((d) => d.json())
+            .then((res) =>{
+                // console.log("res", res.album);
+                setShowData(res.album)
+                setTotalPages(res.totalPages);
+            })
+        }
+    }, [pageNo, searchKey])
     
 
     const  handlePageChange = function(check){
@@ -46,7 +62,7 @@ export const Home = () => {
 
     return (
         <div>
-            <SearchBar />
+            <SearchBar funSetSearchKey={funSetSearchKey}/>
             
             {/* <h1> Home </h1> */}
             <div  className="container-div-for-display-album">
