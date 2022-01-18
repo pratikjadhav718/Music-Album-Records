@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Footer = ({pageNo}) => {
+export const Footer = ({pageNo, totalPages, handlePageChange}) => {
     return (
         <div style={{
             display:"flex",
@@ -10,9 +10,10 @@ export const Footer = ({pageNo}) => {
             marginTop:"50px"
             
         }}>
-            <Link to="/">prev</Link>
+            <Link to="/" onClick={()=>{handlePageChange("prev")}}>prev</Link>
             <Link to="/">{pageNo}</Link>
-            <Link to="/">next</Link>
+            <Link to="/" onClick={()=>{handlePageChange("next")}}>next</Link>
+            <Link to="/">{pageNo} of {totalPages}</Link>
         </div>
     );
 };

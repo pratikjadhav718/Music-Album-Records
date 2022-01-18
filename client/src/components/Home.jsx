@@ -6,16 +6,36 @@ import { SearchBar } from "./SearchBar/SearchBar";
 
 export const Home = () => {
 
+    const [pageNo, setpageNo] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+
     useEffect(() => {
-        console.log("IN use effect");
-        fetch("http://localhost:2345/album")
+        // console.log("IN use effect");
+        fetch(`http://localhost:2345/album?page=${pageNo}`)
         .then((d) => d.json())
         .then((res) =>{
-            console.log("res", res.album);
+            // console.log("res", res.album);
             setShowData(res.album)
+            setTotalPages(res.totalPages);
         })
-    }, [])
-    const [pageNo, setpageNo] = useState(1);
+    }, [pageNo])
+    
+
+    const  handlePageChange = function(check){
+    
+        if(check == "prev"){
+            if(pageNo > 1){
+                setpageNo(pageNo - 1);
+            }
+        }else if(check == "next"){
+            // console.log('next:', pageNo, totalPages);
+            if(pageNo < totalPages){
+                setpageNo(pageNo + 1)
+                // console.log('pageNo:', pageNo)
+            }
+        }
+
+    }
 
     var [showData, setShowData] = useState([
         // {album_name:"Sour", ids:1, image_link:"", artist_name:"Michael Jackson",song_count:10, description:"clear"}, 
@@ -39,7 +59,7 @@ export const Home = () => {
                 {/* <DisplayAlbum />
                 <DisplayAlbum /> */}
             </div>
-            <Footer pageNo={pageNo}/>
+            <Footer pageNo={pageNo} totalPages={totalPages} handlePageChange={handlePageChange}/>
         </div>
     )
 }

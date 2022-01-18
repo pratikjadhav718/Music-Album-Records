@@ -1,8 +1,7 @@
 import "./displayalbum.css";
-import coverpic from "./coverpic.jpg";
 
 export const DisplayAlbum = ({showData}) => {
-    console.log('showData:', showData)
+    // console.log('showData:', showData)
     return (
         <>
             {
