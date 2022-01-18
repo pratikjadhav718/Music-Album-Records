@@ -7,7 +7,7 @@ export const Footer = ({pageNo, totalPages, handlePageChange}) => {
             gap:"30px",
             width:"500px",
             margin:"auto",
-            marginTop:"50px"
+            marginTop:"15px"
             
         }}>
             <Link to="/" onClick={()=>{handlePageChange("prev")}}>prev</Link>

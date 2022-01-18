@@ -3,6 +3,7 @@ import { DisplayAlbum } from "./DisplayAlbum/DisplayAlbum"
 import { Footer } from "./footer";
 import { useEffect, useState } from "react";
 import { SearchBar } from "./SearchBar/SearchBar";
+import { Filters } from "./Filters/Filters";
 
 export const Home = () => {
 
@@ -63,6 +64,8 @@ export const Home = () => {
     return (
         <div>
             <SearchBar funSetSearchKey={funSetSearchKey}/>
+
+            <Filters />
             
             {/* <h1> Home </h1> */}
             <div  className="container-div-for-display-album">

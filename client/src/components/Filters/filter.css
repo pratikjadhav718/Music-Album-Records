@@ -1,0 +1,12 @@
+.main-div-for-filters {
+    border: 1px solid springgreen;
+    width: 80%;
+    margin: auto;
+    height: 25px;
+    display: flex;
+    
+}
+
+.genres-selector {
+    height: 25px;
+}
