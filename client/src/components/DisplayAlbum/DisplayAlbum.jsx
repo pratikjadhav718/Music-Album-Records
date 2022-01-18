@@ -1,12 +1,18 @@
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import "./displayalbum.css";
 
 export const DisplayAlbum = ({showData}) => {
     // console.log('showData:', showData)
+
+    const handleAlbumClick = (e)=>{
+        console.log("clicked albdsjf", e.target.value);
+        <Redirect to="/" />
+    }
     return (
         <>
             {
                 showData.map((e) =>(
-                    <div className="display-album-main-div" key={e._id}>
+                    <div className="display-album-main-div" key={e._id} onClick={handleAlbumClick}>
                         <h2>{e.album_name}</h2>
                         <img src={e.poster} alt="" />
                         <h3>{e.artist.name}</h3>
