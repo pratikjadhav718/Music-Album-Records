@@ -18,5 +18,9 @@
 }
 
 .main-div-for-filters > select {
-    border: none;
+    border: 1px solid white;
+    background: gray;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
 }

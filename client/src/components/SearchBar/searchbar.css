@@ -16,6 +16,9 @@
 
 
 .searchbar-div > input {
+    color: white;
+    background: gray;
+    border-radius: 5px;
     width: 70%;
     height: 50%;
     margin-top: 10px;

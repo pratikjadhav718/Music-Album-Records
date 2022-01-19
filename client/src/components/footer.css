@@ -1,0 +1,36 @@
+.footer-main-div {
+    font-size: 18px;
+}
+
+.footer-main-div > button {
+    border: 1px solid white;
+    background: gray;
+    color: white;
+    /* font-size: 14px; */
+    border-radius: 5px;
+    height: 25px;
+    width: 50px;    
+}
+
+.page-no-div {
+    border: 1px solid white;
+    background: gray;
+    width: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 25px;
+    text-align: center;
+}
+
+.page-no-div > p{
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+    color: white;
+}
+
+.pageno-and-totalpages > p{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}

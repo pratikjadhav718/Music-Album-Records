@@ -21,9 +21,11 @@ export const SearchBar = ({funSetSearchKey}) => {
                 value={searchText} 
                 onChange={handleChnage}
                 
-                /> <span><img style={{width:"25px", height:"25px"}} 
+                />
+                {/* <span><img style={{width:"25px", height:"25px"}} 
                 onClick={()=>{handleClick()}}
-                src={searchIcon} alt="" /></span>
+                src={searchIcon} alt="" /></span> */}
+                <span><button style={{marginLeft:"5px", marginTop:"0px"}} onClick={()=>{handleClick()}}><img src={searchIcon} style={{width:"25px", background:"gray"}} alt="" /></button></span>
             </div>
         </div>
     )
