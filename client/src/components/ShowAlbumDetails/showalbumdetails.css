@@ -1,0 +1,22 @@
+.background-album-div {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background: darkgray;
+}
+
+.display-album-data {
+    width: 650px;
+    height: auto;
+    margin: auto;
+    /* margin-top: 20px; */
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.display-album-data > img {
+    width: 200px;
+}
