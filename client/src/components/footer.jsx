@@ -14,6 +14,7 @@ export const Footer = ({pageNo, totalPages, handlePageChange}) => {
             <Link to="/">{pageNo}</Link>
             <Link to="/" onClick={()=>{handlePageChange("next")}}>next</Link>
             <Link to="/">{pageNo} of {totalPages}</Link>
+            <button>ok</button>
         </div>
     );
 };
