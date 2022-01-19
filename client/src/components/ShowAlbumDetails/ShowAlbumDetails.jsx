@@ -8,16 +8,23 @@ export const ShowAlbumDetails = () =>{
     const id = useParams();
     // console.log('id:', id);
 
-    const [dataobj, setdatobj] = useState({});
+    const [dataobj, setdatobj] = useState({
+        album_name:"",
+        poster:"",
+        year:"",
+        artist:{name:""},
+        genres:[],
+        song_list:[]
+    });
 
     useEffect(() =>{
         fetch(`http://localhost:2345/album/${id.id}`)
         .then((d) => d.json())
         .then((res) => {
-            // console.log(res[0]);
+            console.log(res[0]);
             setdatobj(res[0]);
         })
-    })
+    },[])
     return (
         <>
         <div className="background-album-div">
@@ -28,11 +35,18 @@ export const ShowAlbumDetails = () =>{
                 <h2>{dataobj.artist.name}</h2>
                 <p>
                 {
-                    dataobj.genres.map((e) => (
-                        <span>{e} </span>
+                    dataobj.genres.map((e, i) => (
+                        <span key={i}>{e} </span>
                     ))
                 }
                 </p>
+                {
+                    dataobj.song_list.map((e, i) => (
+                        <div key={i} className="show-song-list">
+                            <p>{e.song_name}</p>
+                        </div>
+                    ))
+                }
             </div>
         </div>
         </>
