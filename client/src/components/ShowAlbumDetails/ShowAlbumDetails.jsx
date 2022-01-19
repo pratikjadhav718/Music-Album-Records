@@ -8,10 +8,10 @@ export const ShowAlbumDetails = () =>{
     console.log('id:', id);
 
     useEffect(() =>{
-        fetch(`http://localhost:2345/album/${id}`)
+        fetch(`http://localhost:2345/album/${id.id}`)
         .then((d) => d.json())
         .then((res) => {
-            console.log(res);
+            console.log(res[0]);
         })
     })
     return (

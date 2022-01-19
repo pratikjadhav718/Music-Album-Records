@@ -5,9 +5,9 @@ export const DisplayAlbum = ({showData}) => {
     // console.log('showData:', showData)
 
     const handleAlbumClick = (e)=>{
-        console.log("clicked albdsjf", e._id);
+        console.log("clicked albdsjf", e.album_name);
         // <Redirect to={`/album/${e._id}`} />
-        window.location = `/album/${e._id}`;
+        window.location = `/album/${e.album_name}`;
     }
     return (
         <>

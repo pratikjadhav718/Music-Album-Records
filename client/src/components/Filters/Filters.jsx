@@ -1,11 +1,15 @@
 
-import { useState } from "react/cjs/react.development";
+// import { useState } from "react/cjs/react.development";
 import "./filter.css";
 
-export const Filters = ({funGenre}) => {
+export const Filters = ({funGenre, funSort}) => {
 
     const handleselctChange = (e) =>{
         funGenre(e.target.value);
+    }
+
+    const handleSortChange = (e) => {
+        funSort(e.target.value);
     }
     return(
         <>
@@ -20,10 +24,10 @@ export const Filters = ({funGenre}) => {
                     <option value="Bedroom Pop">Bedroom Pop</option>
                 </select>
 
-                <select name="year" id="year" className="year-selectore">
-                <option value="Popular">Popular</option>
-                <option value="Newest">Newest</option>
-                <option value="Oldest">Oldest</option>
+                <select name="year" id="year" className="year-selectore" onChange={handleSortChange}>
+                    <option value="Popular">Popular</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Oldest">Oldest</option>
                 </select>
 
 

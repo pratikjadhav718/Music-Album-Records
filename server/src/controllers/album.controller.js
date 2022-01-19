@@ -37,10 +37,11 @@ router.get("", searchAlbum, searchAlbumByGenres, searchAlbumBySort, searchHandle
     return res.send({album, totalPages});
 })
 
-router.get("/:id", async(req, res)=>{
-    const item = await Album.findById(req.params.id).populate("song_list");
+router.get("/:name", async(req, res)=>{
+    const item = await Album.find({album_name:req.params.name}).populate("song_list").populate("artist");
+    // console.log('item:', item)
 
-    return res.status(200).send({item});
+    return res.status(200).send(item);
 })
 
 // router.get("/:id", crudController.getbyid(Album));

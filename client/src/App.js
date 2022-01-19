@@ -27,7 +27,7 @@ import { ShowAlbumDetails } from './components/ShowAlbumDetails/ShowAlbumDetails
 function App() {
   return (
     <div className="App">
-    <Navbar/>
+    {/* <Navbar/> */}
     <Switch>
     <Route exact path="/">
       <Home/>

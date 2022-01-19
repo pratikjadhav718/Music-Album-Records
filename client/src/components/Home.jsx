@@ -11,10 +11,15 @@ export const Home = () => {
     const [totalPages, setTotalPages] = useState(1);
     const [searchKey, setSearchKey] = useState("");
     const [genreValue, setGenreValue] = useState("");
+    const [sortType, setSortType] = useState("");
 
     const funGenre = (newGen)=>{
         // console.log(newGen, "adbdfd");
         setGenreValue(newGen);
+    }
+
+    const funSort = (newSort)=>{
+        setSortType(newSort);
     }
 
     const funSetSearchKey = (newkey)=>{
@@ -23,7 +28,15 @@ export const Home = () => {
     }
     useEffect(() => {
         // console.log("IN use effect");
-        if(genreValue.length > 0){
+        if(sortType.length > 0){
+            fetch(`http://localhost:2345/album?sort=${sortType}`)
+            .then((d) => d.json())
+            .then((res) =>{
+                // console.log("res", res.album);
+                setShowData(res.album)
+                setTotalPages(res.totalPages);
+            })
+        }else if(genreValue.length > 0){
             fetch(`http://localhost:2345/album?genre=${genreValue}`)
             .then((d) => d.json())
             .then((res) =>{
@@ -49,7 +62,7 @@ export const Home = () => {
                 setTotalPages(res.totalPages);
             })
         }
-    }, [pageNo, searchKey, genreValue])
+    }, [pageNo, searchKey, genreValue, sortType])
     
 
     const  handlePageChange = function(check){
@@ -79,7 +92,7 @@ export const Home = () => {
         <div>
             <SearchBar funSetSearchKey={funSetSearchKey}/>
 
-            <Filters funGenre={funGenre}/>
+            <Filters funGenre={funGenre} funSort={funSort}/>
             
             {/* <h1> Home </h1> */}
             <div  className="container-div-for-display-album">
