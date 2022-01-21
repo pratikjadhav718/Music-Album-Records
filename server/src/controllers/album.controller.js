@@ -33,7 +33,7 @@ router.get("", searchAlbum, searchAlbumByGenres, searchAlbumBySort, searchHandle
     // console.log('totalAlbumCount:', totalAlbumCount)
 
     const totalPages = Math.ceil(totalAlbumCount/ size);
-
+    console.log("check check check");
     return res.send({album, totalPages});
 })
 

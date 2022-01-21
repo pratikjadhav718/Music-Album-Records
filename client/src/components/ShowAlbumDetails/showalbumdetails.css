@@ -23,14 +23,22 @@
 
 .show-song-list {
     margin-top: 5px;
-    margin-left: 20px;
     margin: 20px;
+    margin-left: 20px;
     border: 1px solid white;
     text-align: left;
     border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .show-song-list > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 25px;
     font-size: 24px;
+}
+
+.show-song-list :nth-child(2){
+    margin-right: 25px;
 }

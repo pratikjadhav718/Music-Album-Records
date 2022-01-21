@@ -44,6 +44,7 @@ export const ShowAlbumDetails = () =>{
                     dataobj.song_list.map((e, i) => (
                         <div key={i} className="show-song-list">
                             <p>{e.song_name}</p>
+                            <p>{Math.floor(Number(e.song_duration) / 60)}:{Number(e.song_duration) % 60}</p>
                         </div>
                     ))
                 }

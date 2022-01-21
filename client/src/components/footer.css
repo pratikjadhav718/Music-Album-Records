@@ -6,7 +6,7 @@
     border: 1px solid white;
     background: gray;
     color: white;
-    /* font-size: 14px; */
+    font-size: 16px;
     border-radius: 5px;
     height: 25px;
     width: 50px;    
@@ -17,7 +17,7 @@
     background: gray;
     width: 25px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     height: 25px;
     text-align: center;
 }
@@ -25,7 +25,7 @@
 .page-no-div > p{
     margin: 0%;
     padding: 0%;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
 }
 
