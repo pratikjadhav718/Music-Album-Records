@@ -1,0 +1,253 @@
+[{
+  "_id": {
+    "$oid": "61e55713ba8ea1147f874df6"
+  },
+  "album_name": "Ben",
+  "year": 1972,
+  "artist": {
+    "$oid": "61e5519eba8ea1147f874dc4"
+  },
+  "song_list": [
+    {
+      "$oid": "61e55360ba8ea1147f874dd6"
+    },
+    {
+      "$oid": "61e55391ba8ea1147f874dd9"
+    },
+    {
+      "$oid": "61e553aaba8ea1147f874ddc"
+    },
+    {
+      "$oid": "61e553c5ba8ea1147f874ddf"
+    },
+    {
+      "$oid": "61e553e7ba8ea1147f874de2"
+    },
+    {
+      "$oid": "61e55402ba8ea1147f874de5"
+    },
+    {
+      "$oid": "61e5541cba8ea1147f874de8"
+    },
+    {
+      "$oid": "61e5543cba8ea1147f874deb"
+    },
+    {
+      "$oid": "61e55457ba8ea1147f874dee"
+    },
+    {
+      "$oid": "61e55475ba8ea1147f874df1"
+    }
+  ],
+  "genres": [
+    "Pop Music",
+    "R&B"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/BenMichaelJackson.jpg/220px-BenMichaelJackson.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e55b3995fa7799b1c9ab7c"
+  },
+  "album_name": "Music & Me",
+  "year": 1973,
+  "artist": {
+    "$oid": "61e5519eba8ea1147f874dc4"
+  },
+  "song_list": [
+    {
+      "$oid": "61e5593d95fa7799b1c9ab6d"
+    },
+    {
+      "$oid": "61e559f695fa7799b1c9ab70"
+    },
+    {
+      "$oid": "61e55a2b95fa7799b1c9ab73"
+    },
+    {
+      "$oid": "61e55a5f95fa7799b1c9ab76"
+    },
+    {
+      "$oid": "61e55a9495fa7799b1c9ab79"
+    }
+  ],
+  "genres": [
+    "Pop Music",
+    "R&B"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/1/19/Mjmusicandme.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e5683095fa7799b1c9ab92"
+  },
+  "album_name": "Thriller",
+  "year": 1982,
+  "artist": {
+    "$oid": "61e5519eba8ea1147f874dc4"
+  },
+  "song_list": [
+    {
+      "$oid": "61e565d695fa7799b1c9ab7f"
+    },
+    {
+      "$oid": "61e5660295fa7799b1c9ab82"
+    },
+    {
+      "$oid": "61e5663f95fa7799b1c9ab86"
+    },
+    {
+      "$oid": "61e5667395fa7799b1c9ab89"
+    }
+  ],
+  "genres": [
+    "Pop Music",
+    "Post-Disco",
+    "R&B",
+    "Rock",
+    "Funk"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Michael_Jackson_-_Thriller.png/220px-Michael_Jackson_-_Thriller.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e58d1c95fa7799b1c9aba6"
+  },
+  "album_name": "Tapestry",
+  "year": 1971,
+  "artist": {
+    "$oid": "61e58c3c95fa7799b1c9aba0"
+  },
+  "song_list": [
+    {
+      "$oid": "61e58b7e95fa7799b1c9ab97"
+    },
+    {
+      "$oid": "61e58baf95fa7799b1c9ab9a"
+    },
+    {
+      "$oid": "61e58be995fa7799b1c9ab9d"
+    }
+  ],
+  "genres": [
+    "Pop Music",
+    "Soft Rock"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Carole_King_-_Tapestry.jpg/220px-Carole_King_-_Tapestry.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e5965195fa7799b1c9abb8"
+  },
+  "album_name": "Nevermind",
+  "year": 1991,
+  "artist": {
+    "$oid": "61e5957495fa7799b1c9abaf"
+  },
+  "song_list": [
+    {
+      "$oid": "61e5950d95fa7799b1c9aba9"
+    },
+    {
+      "$oid": "61e5954795fa7799b1c9abac"
+    }
+  ],
+  "genres": [
+    "Grunge",
+    "Alternative rock"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/NirvanaNevermindalbumcover.jpg/220px-NirvanaNevermindalbumcover.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e5986d95fa7799b1c9abcd"
+  },
+  "album_name": "Heaux Tales",
+  "year": 2021,
+  "artist": {
+    "$oid": "61e5978f95fa7799b1c9abc7"
+  },
+  "song_list": [
+    {
+      "$oid": "61e596f695fa7799b1c9abbb"
+    },
+    {
+      "$oid": "61e5971b95fa7799b1c9abbe"
+    },
+    {
+      "$oid": "61e5973f95fa7799b1c9abc1"
+    },
+    {
+      "$oid": "61e5976695fa7799b1c9abc4"
+    }
+  ],
+  "genres": [
+    "R&B",
+    "Hip Hop"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/HEAUX-TALES-ep-cover.jpg/220px-HEAUX-TALES-ep-cover.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e59be295fa7799b1c9abed"
+  },
+  "album_name": "Sour",
+  "year": 2021,
+  "artist": {
+    "$oid": "61e59a4295fa7799b1c9abe1"
+  },
+  "song_list": [
+    {
+      "$oid": "61e5996c95fa7799b1c9abd2"
+    },
+    {
+      "$oid": "61e5999695fa7799b1c9abd5"
+    },
+    {
+      "$oid": "61e599b895fa7799b1c9abd8"
+    },
+    {
+      "$oid": "61e599e695fa7799b1c9abdb"
+    },
+    {
+      "$oid": "61e59a1c95fa7799b1c9abde"
+    }
+  ],
+  "genres": [
+    "Pop Music",
+    "Alternative Pop",
+    "Bedroom Pop",
+    "Pop-Punk"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Olivia_Rodrigo_-_SOUR.png/220px-Olivia_Rodrigo_-_SOUR.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e59eeb95fa7799b1c9ac0b"
+  },
+  "album_name": "Future Nostalgia",
+  "year": 2020,
+  "artist": {
+    "$oid": "61e59cbc95fa7799b1c9abf3"
+  },
+  "song_list": [
+    {
+      "$oid": "61e59e3b95fa7799b1c9ac08"
+    },
+    {
+      "$oid": "61e59e0e95fa7799b1c9ac05"
+    },
+    {
+      "$oid": "61e59c9295fa7799b1c9abf0"
+    }
+  ],
+  "genres": [
+    "Pop-funk",
+    "Dance Pop",
+    "electrpop",
+    "nu-disco",
+    "synth-pop"
+  ],
+  "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Dua_Lipa_-_Future_Nostalgia_%28Official_Album_Cover%29.png/220px-Dua_Lipa_-_Future_Nostalgia_%28Official_Album_Cover%29.png",
+  "__v": 0
+}]

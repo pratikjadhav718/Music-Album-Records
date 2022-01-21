@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "61e5519eba8ea1147f874dc4"
+  },
+  "name": "Michael Jackson",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e58c3c95fa7799b1c9aba0"
+  },
+  "name": "Carole King",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e5957495fa7799b1c9abaf"
+  },
+  "name": "Nirvana",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e5978f95fa7799b1c9abc7"
+  },
+  "name": " Jazmine Sullivan",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e59a4295fa7799b1c9abe1"
+  },
+  "name": "Olivia Rodrigo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e59cbc95fa7799b1c9abf3"
+  },
+  "name": "Dua Lipa",
+  "__v": 0
+}]
