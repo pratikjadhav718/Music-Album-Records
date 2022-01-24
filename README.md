@@ -1,4 +1,8 @@
 # Music-Album-Records
 Music Albums with the name of the Artist and the no of songs in that particular Album
 
-![](client/others/Capture11.png)
+
+
+![alt text](https://github.com/pratikjadhav718/Music-Album-Records/blob/main/client/others/Capture11.PNG)
+
+![alt text](https://github.com/pratikjadhav718/Music-Album-Records/blob/main/client/others/Capture12.PNG)
