@@ -1,5 +1,5 @@
 # Music-Album-Records
-It is a full-stack web app 
+It is a full-stack web app <br>
 Tech-stack:
 for frontend - ReactJs
 for Backend - ExpressJs, MongoDB, NodeJs
