@@ -1,4 +1,8 @@
 # Music-Album-Records
+It is a full-stack web app 
+Tech-stack:
+for frontend - ReactJs
+for Backend - ExpressJs, MongoDB, NodeJs
 Music Albums with the name of the Artist and the no of songs in that particular Album
 
 
